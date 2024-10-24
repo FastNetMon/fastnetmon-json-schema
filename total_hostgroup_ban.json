@@ -54,5 +54,6 @@
     "total_outgoing_traffic_bits": 8773128
   },
   "hostgroup_name": "Customers_total",
+  "hostgroup_networks": [ "192.168.1.0/24", "10.10.1.2/16" ],
   "parent_hostgroup_name": "Customers"
 }
