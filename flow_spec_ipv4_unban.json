@@ -1,0 +1,80 @@
+{
+  "action": "partial_unblock",
+  "alert_scope": "host",
+  "attack_details": {
+    "attack_detection_source": "automatic",
+    "attack_detection_threshold": "bytes per second",
+    "attack_detection_threshold_direction": "incoming",
+    "attack_severity": "middle",
+    "attack_uuid": "c840c587-6316-4a4c-b27b-08bec41dc7cc",
+    "host_group": "global",
+    "host_network": "192.0.2.1/24",
+    "incoming_dropped_pps": 0,
+    "incoming_dropped_traffic": 0,
+    "incoming_dropped_traffic_bits": 0,
+    "incoming_icmp_pps": 1,
+    "incoming_icmp_traffic": 88,
+    "incoming_icmp_traffic_bits": 704,
+    "incoming_ip_fragmented_pps": 0,
+    "incoming_ip_fragmented_traffic": 0,
+    "incoming_ip_fragmented_traffic_bits": 0,
+    "incoming_syn_tcp_pps": 190,
+    "incoming_syn_tcp_traffic": 235038,
+    "incoming_syn_tcp_traffic_bits": 1880304,
+    "incoming_tcp_pps": 1760,
+    "incoming_tcp_traffic": 2335746,
+    "incoming_tcp_traffic_bits": 18685968,
+    "incoming_udp_pps": 1256,
+    "incoming_udp_traffic": 1416027,
+    "incoming_udp_traffic_bits": 11328216,
+    "outgoing_dropped_pps": 0,
+    "outgoing_dropped_traffic": 0,
+    "outgoing_dropped_traffic_bits": 0,
+    "outgoing_icmp_pps": 0,
+    "outgoing_icmp_traffic": 39,
+    "outgoing_icmp_traffic_bits": 312,
+    "outgoing_ip_fragmented_pps": 0,
+    "outgoing_ip_fragmented_traffic": 0,
+    "outgoing_ip_fragmented_traffic_bits": 0,
+    "outgoing_syn_tcp_pps": 109,
+    "outgoing_syn_tcp_traffic": 17484,
+    "outgoing_syn_tcp_traffic_bits": 139872,
+    "outgoing_tcp_pps": 899,
+    "outgoing_tcp_traffic": 123087,
+    "outgoing_tcp_traffic_bits": 984696,
+    "outgoing_udp_pps": 314,
+    "outgoing_udp_traffic": 128137,
+    "outgoing_udp_traffic_bits": 1025096,
+    "parent_host_group": "",
+    "protocol_version": "IPv4",
+    "total_incoming_flows": 12,
+    "total_incoming_pps": 3023,
+    "total_incoming_traffic": 3751869,
+    "total_incoming_traffic_bits": 30014952,
+    "total_outgoing_flows": 12,
+    "total_outgoing_pps": 1219,
+    "total_outgoing_traffic": 251271,
+    "total_outgoing_traffic_bits": 2010168
+  },
+  "flow_spec_rules": [
+    {
+      "action_type": "discard",
+      "destination_ports": [
+        60282
+      ],
+      "destination_prefix": "192.0.2.1/32",
+      "protocols": [
+        "tcp"
+      ],
+      "source_ports": [
+        443
+      ],
+      "source_prefix": "3.160.119.111/32",
+      "tcp_flags": [
+        "syn|ack"
+      ],
+      "uuid": "6351a57b-f9d2-4756-825f-ea7ed4d48eff"
+    }
+  ],
+  "ip": "192.0.2.1"
+}
